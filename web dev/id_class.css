@@ -1,0 +1,18 @@
+.red{
+    background-color: aquamarine;
+}
+.green{
+    color: blue;
+}
+.blue{
+    color: blanchedalmond;
+}
+#firstid{
+    color: rgb(197, 244, 9);
+}
+#secondid{
+    background-color: rgb(76, 15, 219);
+}
+#thirdid{
+    background-color: brown;
+}

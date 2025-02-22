@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container {
+            background-color: aqua;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            /* if fd=row then main axis=horizontal,if fd=coloumn then main axis=vertical */
+            flex-wrap: wrap;
+            justify-content: start;
+            /* jc type:center,end,start,space-between,space-around */
+            align-items: start;
+            /*works on cross axis opposite of main axis ai contain start,end,center,space*/
+       align-content: end;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+
+        #box1 {
+            background: red;
+            border: 2px solid black;
+
+        }
+
+        #box2 {
+            background: #18e10a;
+            border: 2px solid black;
+
+        }
+
+        #box3 {
+            background: #fb12c5;
+            border: 2px solid black;
+        }
+
+        #box4 {
+            background: #1cc19d;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+
+</html>

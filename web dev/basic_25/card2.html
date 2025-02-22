@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: rgb(63, 94, 251);
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .box {
+            width: 300px;
+            height: 500px;
+            background: rgb(238, 174, 202);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(242, 251, 255, 1) 100%);
+            border-radius: 20px;
+            box-shadow: 3px 3px 30px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box .imm {
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            gap:20%;
+        }
+
+
+        #diii {
+            width: 100%;
+            height: 20%;
+            background-color: azure;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .left{
+            display: flex;
+
+        }
+        .ull{
+            list-style: none;
+        }
+        #proceed{
+         background-color: bisque;
+         width: 70%;
+         height: 4%;
+        border-radius: 20px;
+        }
+        #cancel{
+            text-decoration: none;
+            color: rgb(122, 123, 124);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img class="imm" src="immmm.jpeg" alt="pic">
+            <div>
+                <h2>heading</h2>
+            </div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo iure ducimus rem?</p>
+            </div>
+            <div id="diii">
+                <div class="left"><img src="music.jpeg" height="20px" width="20px">
+                   <ul class="ull">
+                    <li>Annual income</li>
+                    <li>$544.098</li>
+                   </ul>
+                </div>
+                <div class="right"><a href="#">change</a></div>
+            </div>
+            <button id="proceed">procced to pay</button>
+            <div id="cancel">
+                <a  href="#">cancel order</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

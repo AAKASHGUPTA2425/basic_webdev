@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position properties</title>
+    <style>
+        /* .img_1 {
+            position: relative;
+            top: 100px;
+            /* relative:
+        top
+        bottom
+        right
+        left 
+        } */
+        .img_2 {
+             position: absolute;
+            top: 200px; 
+            position: sticky;
+            top: 200px;
+        }
+
+        .img_3 {
+            position: fixed;
+        }
+
+        .position {
+            height: 3000px;
+            background-color: bisque;
+        }
+
+        .box {
+            background-color: aqua;
+            height: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="position">
+        <img class="img_1" src="image.jpeg" alt="first image" height="200px" weight="100px" />
+        <img class="img_2" src="tanjiro.jpeg" alt="second image" height="200px" weight="100px" />
+        <img class="img_3" src="demon slayer.jpg" alt="third image" height="200px" weight="100px" />
+    </div>
+    <div class="box"></div>
+</body>
+
+</html>

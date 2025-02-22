@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        root {
+            --primary-color: brown;
+            --custom-width: 350px;
+        }
+
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 4px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background: #bcd217;
+            border: 4px solid var(--primary-color);
+            width: var(--custom-width);
+            height: 300px;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 10px -8px var(--primary-color);
+            /* box-shadow: 10px 8px 9px red; */
+            /* box-shadow: 10px 30px 11px 30px blue ; */
+            /* box-shadow: inset 12px 8px 11px 12px burlywood; */
+        }
+
+        #heading {
+            /* text-shadow: 8px 9px white; */
+            text-shadow: brown 3px 4px 3px ;
+            /* text-shadow: 6px 16px 2px red, 6px 12px 2px yellow, 6px 13px 2px blue; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="image.jpeg" height="100" width=100px />
+            <h3 id="heading">this is heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto animi, excepturi mollitia labore ad
+                consectetur illo saepe necessitatibus nobis harum. Atque, natus reiciendis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

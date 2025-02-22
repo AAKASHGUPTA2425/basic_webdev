@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state(pause,running) | name */
+            animation: 3s ease-in 1s 2 reverse both running slidein;
+        }
+
+        @keyframes slidein {
+            0% {
+                transform: translateX(0);
+                background-color: red;
+            }
+
+            100% {
+                transform: translateX(300px);
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

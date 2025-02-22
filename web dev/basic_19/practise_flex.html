@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query flex</title>
+    <style>
+        .container {
+            background: #2408c1;
+            border: 4px solid black;
+            display: flex;
+            flex-direction: row;
+          
+        }
+
+        #boxleft {
+            background-color: #0bc911;
+            width: 50%;
+        }
+
+    
+
+        @media(max-width:400px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+        <div id="boxright">
+            <img src="image.jpeg" height="200" width="200" />
+        </div>
+    </div>
+</body>
+
+</html>

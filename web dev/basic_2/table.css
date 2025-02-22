@@ -1,0 +1,11 @@
+td,table,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 120px;
+    border-style: dashed;
+}
+th{
+    background-color: rgb(29, 240, 240);
+} td{
+    background-color: yellowgreen;
+}

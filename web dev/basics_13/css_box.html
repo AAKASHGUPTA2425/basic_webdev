@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: blue;
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid black;
+            height: 200px;
+             box-sizing: border-box;  /*this command is for taking total height or width including border,padding,margin*/
+        }
+
+        .box2 {
+            color: rgb(14, 210, 115);
+            padding: 10px;
+            margin: 30px;
+            border: 2px solid blue;
+            width:200px;
+             box-sizing:border-box;
+            /* margin collapse */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">i am a box</div>
+    <div class="box box2">i am another box</div>
+</body>
+
+</html>

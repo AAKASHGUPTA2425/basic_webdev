@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media_queries and flex</title>
+    <style>
+        .container {
+            background-color: aqua;
+            border: 2px solid black;
+            display: flex;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+
+        #box1 {
+            background: red;
+            border: 2px solid black;
+
+        }
+
+        #box2 {
+            background: #18e10a;
+            border: 2px solid black;
+
+        }
+
+        #box3 {
+            background: #fb12c5;
+            border: 2px solid black;
+        }
+
+        @media(max-width:640px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </div>
+</body>
+
+</html>

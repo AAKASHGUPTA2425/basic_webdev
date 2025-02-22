@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+
+    <!-- /* element selector  */ -->
+    <style>
+        div {
+            color: aquamarine;
+            background-color: rgb(221, 176, 14);
+        }
+
+        /* <!-- id selector --> */
+
+        #red {
+            color: rgb(161, 127, 255);
+            background-color: rgb(14, 182, 78);
+        }
+
+        /* <!-- class selector --> */
+
+        .class {
+            color: rgb(222, 76, 13);
+            background-color: rgba(145, 10, 160, 0.575);
+        }
+
+        /*     
+    <!-- child selector --> */
+
+        div>p {
+            color: cadetblue;
+            background-color: rgb(59, 188, 71);
+        }
+
+        /* descendent selector */
+        div p {
+            color: rgb(0, 0, 0);
+            background-color: rgb(95, 22, 73);
+        }
+/* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+    a{
+        color: aqua;
+    }
+    a:link{
+        color: aquamarine;
+    }
+    a:active{
+        background-color: black;
+    }
+    a:hover{
+        background-color: rgb(203, 15, 15);
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        first div
+    </div>
+    <div id="red">
+        i am a div
+    </div>
+    <div class="class">
+        i am another div
+    </div>
+    <div>
+        <p>i am paragraph</p>
+    </div>
+    <div>
+        <main>
+            <p>this is paragraph of decenedent of div</p>
+        </main>
+    </div>
+    <a href="http//wwww.google.com">google.com</a>
+    <a href="http//wwww.linkedin.com">linkedin.com</a>
+
+</body>
+
+</html>

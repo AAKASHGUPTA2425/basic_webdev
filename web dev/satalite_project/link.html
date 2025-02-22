@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Satellite Tracker</h1>
+    </header>
+
+    <main>
+        <div id="map"></div>
+        <div id="satellite-info">
+            <h2>Satellite Information</h2>
+            <p id="satellite-name">Name: </p>
+            <p id="satellite-id">ID: </p>
+            <p id="satellite-lat">Latitude: </p>
+            <p id="satellite-lon">Longitude: </p>
+        </div>
+        <select id="satellite-selector">
+            <option value="33591">TerraSAR-X</option>
+            <option value="37820">Hubble Space Telescope</option>
+            <option value="49260">Starlink-1957</option>
+        </select>
+    </main>
+    
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

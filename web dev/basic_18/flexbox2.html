@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox_2</title>
+    <style>
+        .box{
+            background-color: aquamarine;
+            height: 500px;
+            margin: 2px;
+            padding: 2px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+           align-items: start;
+          
+
+        }
+        .flex{
+            border: 2px solid black;
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            
+        }
+        #box1{
+            color: blue;
+            order: 200;
+            /* flex-shrink: 5; */
+            /* flex-grow: 5; */
+            /* flex-basis: 200px; */
+            align-self: end;
+        }
+        #box2{
+            color: red;
+            order: 500;
+        }
+        #box3{
+            color: green;
+            order: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="flex" id="box1">this is para</p>
+        <p class="flex" id="box2">this is para</p>
+        <p class="flex" id="box3">this is para</p>
+    </div>
+</body>
+</html>
